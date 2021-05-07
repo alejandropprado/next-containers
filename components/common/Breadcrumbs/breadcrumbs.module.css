@@ -1,0 +1,17 @@
+.breadcrumbs {
+  margin-bottom: 34px;
+}
+
+.breadcrumbs > span {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--bx-color-black);
+  cursor: default;
+}
+
+.pointer {
+  cursor: pointer !important;
+}

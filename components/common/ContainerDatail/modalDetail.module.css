@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 40px 0px;
+}
+
+.header > h6 {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 33px;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+
+.status {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status > span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #494949;
+  margin-right: 15px;
+}
+
+.status > div {
+  background: #6f7276;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: var(--bx-color-white);
+  min-width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contentButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.contentButton > button {
+  background: #656565;
+  border-radius: 5px;
+  color: var(--bx-color-white)
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 158%;
+  letter-spacing: 0.03em;
+  color: #828282;
+  width: 50%;
+}
+
+.checkbox > input {
+  margin-right: 15px;
+}
+
+.checkbox > span {
+  text-align: left;
+}

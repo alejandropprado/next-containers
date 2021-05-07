@@ -1,0 +1,44 @@
+.title {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 33px;
+  color: var(--bx-color-black);
+  margin: 0 0 5px 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--bx-color-black);
+}
+
+.contentButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contentButtons > div {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modalTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+}
+
+.input {
+  border: 0.5px solid #bdbdbd;
+  border-radius: 15px 0px 0px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--bx-color-black);
+  padding: 5px 10px;
+  outline: none;
+  border-right: none;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+}
+
+.button {
+  background: #e5e5e5;
+  border: 0.5px solid #828282;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+}
+

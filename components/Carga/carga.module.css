@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header > h6 {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+
+.contentBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% + 10px);
+}
+
+.contentBtn > button {
+  margin: 0 10px;
+}
+
+.tableOptionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableOptionBtn > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

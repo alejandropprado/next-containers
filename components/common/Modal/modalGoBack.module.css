@@ -1,0 +1,51 @@
+.title {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 33px;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--bx-color-black);
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modalTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.contentButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contentButtons > div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.contentButtons > div > button {
+  padding: 0 10px;
+}

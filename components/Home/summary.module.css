@@ -1,0 +1,96 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.header > p:first-child {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--bx-color-black);
+  margin: 0 0 15px 0;
+}
+
+.header > p {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--bx-color-black);
+  margin: 0;
+}
+
+.miniCardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.miniCard {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.miniCardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.miniCardTitle {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c2c2c;
+}
+
+.minicardSubtitle {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--bx-color-black);
+}
+
+.minicardDetail {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.minicardDetail > span {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8e8e8e;
+  margin-right: 16px;
+}
+
+.minicardDetail > div {
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  padding: 2px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.minicardDetail > div > svg {
+  margin-right: 5px;
+}

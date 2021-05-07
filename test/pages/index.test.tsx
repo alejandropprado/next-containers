@@ -1,17 +1,25 @@
-import React from 'react'
-import { render, fireEvent } from '../testUtils'
-import { Home } from '../../pages/index'
+import React from 'react';
+import { render } from '../testUtils';
+import { Root } from '../../pages/index';
+import * as nextRouter from 'next/router';
+import BxLogo from 'components/icons/BlueExpress';
+
+nextRouter.useRouter = jest.fn();
+nextRouter.useRouter.mockImplementation(() => ({ replace: jest.fn() }));
 
 describe('Home page', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<Home />, {})
-    expect(asFragment()).toMatchSnapshot()
-  })
+    const { asFragment } = render(<Root />, {});
 
-  it('clicking button triggers alert', () => {
-    const { getByText } = render(<Home />, {})
-    window.alert = jest.fn()
-    fireEvent.click(getByText('Test Button'))
-    expect(window.alert).toHaveBeenCalledWith('With typescript and Jest')
-  })
-})
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('show loading', () => {
+    const { container } = render(<Root />, {});
+    const { container: bxLogoContainer } = render(<BxLogo width={100} />, {});
+
+    const svg = container.firstChild.firstChild;
+
+    expect(svg.isEqualNode(bxLogoContainer.firstChild)).toBeTruthy();
+  });
+});
